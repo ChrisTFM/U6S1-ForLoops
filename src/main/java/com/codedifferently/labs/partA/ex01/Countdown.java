@@ -10,13 +10,19 @@ public class Countdown {
     }
 
     public static String countUpLoop() {
-
-        return null;
+        String response = "";
+        for (int i = 0; i <= 5; i++) {
+            response += i + " ";
+        }
+        return response;
     }
 
     public static String evenNumbers(){
-
-        return null;
+        String response = "";
+        for (int i = 0; i <= 20; i++) {
+            if (i % 2 == 0){response += i + " ";}
+        }
+        return response;
     }
     public static void main(String[] args) {
 
@@ -33,5 +39,7 @@ public class Countdown {
         System.out.println(outputCountUp);
 
         System.out.println("Blast Off!");
+
+        System.out.println(evenNumbers());
     }
 }
