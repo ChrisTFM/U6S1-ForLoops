@@ -4,8 +4,8 @@ public class ScopeRunner {
 
     public static String scope(){
         String response = "";
-        /*
-        int i = 0;
+
+
 
         for (int i = 64; i >0; i=i/2 ){
             response += i +" ";
@@ -24,10 +24,10 @@ public class ScopeRunner {
 
         response += "\n";
         for(int k = 2; k<=64; k=k*2){
-            response +=k +" ";
+            response += k +" ";
         }
         response += "\n";
-        */
+
         return response;
 
     }
