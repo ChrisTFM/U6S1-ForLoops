@@ -5,8 +5,6 @@ public class ScopeRunner {
     public static String scope(){
         String response = "";
 
-
-
         for (int i = 64; i >0; i=i/2 ){
             response += i +" ";
         }
