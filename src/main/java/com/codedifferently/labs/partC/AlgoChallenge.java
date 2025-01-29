@@ -6,6 +6,9 @@ public class AlgoChallenge {
     and the parameter avengerHero is true if the hero is an Avenger.
     Avengers will assemble if it is not a DC Hero, or they're an Avenger, or there is at least an Avenger on the team.
     Return true if the avengers are ready to assemble.
+
+    Avengers will assemble iF NO A, or IF YES B,
+
     Example:
     avengersAssemble(false, false) --> true
     avengersAssemble(false, true) --> true
@@ -14,8 +17,13 @@ public class AlgoChallenge {
      */
 
     public static Boolean avengersAssemble(boolean dcHero, boolean avengerHero) {
-
-        return null;
+        if (dcHero == false) {
+            return true;
+        }
+        if (avengerHero == true) {
+            return true;
+        }
+        return false;
 
     }
 
@@ -31,8 +39,17 @@ public class AlgoChallenge {
      */
 
     public static Boolean nearValue(int n) {
+        //int num = Math.abs(n); idk why we need to use abs
+        int num = n;
+        if (num >= 90 && num <= 100) {return true;}
+        if (num >= 190 && num <= 200) {return true;}
 
-        return null;
+        return false;
+    }
+
+    public static void main(String[] args){
+        System.out.println(avengersAssemble(true, true));
+        System.out.println(nearValue(89));
     }
 
 }
